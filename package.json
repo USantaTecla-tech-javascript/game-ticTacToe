@@ -1,0 +1,23 @@
+{
+  "name": "mastermind.solution.javascript",
+  "version": "1.0.0",
+  "description": "mastermind using NodeJs",
+  "main": "mastermind.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/USantaTecla-Mastermind/solution.Javascript.git"
+  },
+  "author": "usantatecla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/USantaTecla-Mastermind/solution.Javascript/issues"
+  },
+  "homepage": "https://github.com/USantaTecla-Mastermind/solution.Javascript#readme",
+  "dependencies": {
+    "console-input": "^1.0.2",
+    "enums-js": "^1.0.0"
+  }
+}
