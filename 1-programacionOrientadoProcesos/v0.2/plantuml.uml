@@ -1,0 +1,50 @@
+allow_mixing
+
+rectangle playTicTacToe #red
+
+rectangle isResumed #cyan
+rectangle playGame #red
+
+rectangle getInitialBoard #green/yellow
+rectangle placeToken #red/yellow
+rectangle writelnBoard #cyan/yellow
+rectangle isTicTacToe #green/yellow
+
+rectangle isMovement #green/yellow
+rectangle getOrigin #cyan
+rectangle getTarget #cyan
+rectangle setToken #green/yellow
+
+rectangle getCoordinate #cyan
+rectangle isOccupied #green/yellow
+rectangle getToken #cyan
+
+rectangle getIndex #cyan
+
+rectangle isEquals #green
+rectangle isEmpty #green/yellow
+
+
+playTicTacToe -down-> isResumed
+playTicTacToe -down-> playGame
+
+playGame -down-> getInitialBoard
+playGame -down-> writelnBoard
+playGame -down-> placeToken
+playGame -down-> isTicTacToe
+
+placeToken -down-> isMovement
+placeToken -down-> getOrigin
+placeToken -down-> getTarget
+placeToken -down-> getToken
+placeToken -down-> setToken
+
+getOrigin -down-> getCoordinate
+getOrigin -down-> isOccupied
+getOrigin -down-> getToken
+
+getTarget -down-> getCoordinate
+getTarget -down-> isEquals
+getTarget -down-> isEmpty
+
+getCoordinate -down-> getIndex

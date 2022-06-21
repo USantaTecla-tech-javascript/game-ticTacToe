@@ -3,6 +3,7 @@ const { Console } = require("./console");
 const console = new Console();
 playTicTacToe();
 
+
 function playTicTacToe() {
   do {
     playGame();
@@ -39,7 +40,7 @@ function playTicTacToe() {
       if (movement) {
         do {
           originRow = read(`Fila origen`);
-          originColumn = read(`Columna destino`);
+          originColumn = read(`Columna origen`);
           error = !isOccupied(tokens, originRow, originColumn, turn);
           if (error) {
             console.writeln(`No hay una ficha de la propiedad de ${getToken(turn)}`);
